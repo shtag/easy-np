@@ -1,0 +1,39 @@
+<form [formGroup]="form" (ngSubmit)="logger()">
+  <mat-form-field appearance="outline">
+    <mat-label>Телефон</mat-label>
+    <input matInput formControlName="phone" />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Имя</mat-label>
+    <input matInput formControlName="firstName" />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Фамилия</mat-label>
+    <input matInput formControlName="lastName" />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Город</mat-label>
+    <input matInput formControlName="city" />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Номер почты</mat-label>
+    <input matInput formControlName="postNumber" />
+  </mat-form-field>
+  <mat-checkbox
+    [checked]="isAfterPayment"
+    (change)="isAfterPayment = !isAfterPayment"
+    formControlName="isAfterPayment"
+    >Наложка</mat-checkbox
+  >
+  <div *ngIf="isAfterPayment">
+    <mat-form-field appearance="outline">
+      <mat-label>Сумма наложки</mat-label>
+      <input matInput formControlName="priceToPay" />
+    </mat-form-field>
+  </div>
+  <mat-form-field appearance="outline">
+    <mat-label>Оценочная стоимость</mat-label>
+    <input matInput formControlName="price" />
+  </mat-form-field>
+  <button mat-raised-button>Check</button>
+</form>
