@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './pages/main/main.component';
+import { FromTableComponent } from './pages/from-table/from-table.component';
 
 const routes: Routes = [
   {
@@ -8,7 +9,12 @@ const routes: Routes = [
     component: MainComponent
   },
   {
+    path: 'from-table',
+    component: FromTableComponent
+  },
+  {
     path: 'admin',
+    component: MainComponent
   }
 ];
 

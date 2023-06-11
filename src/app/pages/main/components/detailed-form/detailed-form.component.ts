@@ -31,7 +31,7 @@ export class DetailedFormComponent {
     console.log(`asd
     asda
     asd`.split('/n'))
-    this.api.getWarehouses('одеса').subscr2ibe(el => {
+    this.api.getWarehouses('одеса').subscribe(el => {
       const post = el.data.find(item => item.Number === '39')
       console.log({
         city: post?.CityRef,
