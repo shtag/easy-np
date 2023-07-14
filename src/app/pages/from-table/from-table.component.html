@@ -1,1 +1,22 @@
-<p>from-table works!</p>
+<mat-card>
+  <mat-card-content>
+    <form
+    [formGroup]="form"
+    >
+      <mat-form-field>
+        <mat-label>Textarea</mat-label>
+        <textarea 
+        matInput 
+        formControlName="table"
+        rows="10"
+        [(ngModel)]="textData"
+        ></textarea>
+      </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createCounterparty()">Створити контрагента</button>
+    <button mat-raised-button (click)="createCounterpartyPerson()">Створити Контактну особу</button>
+    <button mat-raised-button (click)="getAllCounterparty()">Загрузити всіх контрагентів</button>
+    <button mat-raised-button (click)="submit()">Створити контрагента</button>
+    <button mat-raised-button (click)="submit()">Створити контрагента</button>
+  </mat-card-content>
+</mat-card>

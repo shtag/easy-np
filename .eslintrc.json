@@ -4,18 +4,11 @@
   "overrides": [
     {
       "files": ["*.ts"],
-      "parserOptions": {
-        "project": ["./tsconfig.json", "tsconfig.*?.json"]
-      },
-      "parser": "@typescript-eslint/parser",
-      "plugins": ["prettier"],
       "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
-        "airbnb-typescript/base",
         "plugin:@angular-eslint/recommended",
-        "plugin:@angular-eslint/template/process-inline-templates",
-        "prettier"
+        "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
         "@angular-eslint/directive-selector": [
@@ -43,7 +36,7 @@
     },
     {
       "files": ["*.ts"],
-      "extends": ["plugin:@ngrx/recommended"]
+      "extends": ["plugin:@ngrx/recommended-requiring-type-checking"]
     }
   ]
 }

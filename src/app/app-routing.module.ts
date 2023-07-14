@@ -6,7 +6,7 @@ import { FromTableComponent } from './pages/from-table/from-table.component';
 const routes: Routes = [
   {
     path: '',
-    component: MainComponent
+    component: FromTableComponent
   },
   {
     path: 'from-table',

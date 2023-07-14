@@ -13,7 +13,6 @@ export class MainComponent {
   // counter$: Observable<number>;
 
   counter = 101010203;
-
   constructor(private store$: Store) {
     // this.counter$ = this.store$.select()
 

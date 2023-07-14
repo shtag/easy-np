@@ -45,6 +45,7 @@ export class DetailedFormComponent {
       index: 'string',
       address: 'string',
       contact: 'string',
+      ref: ''
     }
     const info: PackageInfo = {
       description: 'shothe',

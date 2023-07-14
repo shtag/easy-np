@@ -11,16 +11,12 @@ import { DetailedFormComponent } from './pages/main/components/detailed-form/det
 
 import { HttpClientModule } from '@angular/common/http';
 import { StoreModule } from '@ngrx/store';
-import { TextareaComponent } from './pages/from-table/components/textarea/textarea.component';
-import { FromTableComponent } from './pages/from-table/from-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     DetailedFormComponent,
-    TextareaComponent,
-    FromTableComponent,
   ],
   imports: [
     HttpClientModule,
@@ -32,6 +28,7 @@ import { FromTableComponent } from './pages/from-table/from-table.component';
     StoreModule.forRoot({}, {})
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: []
 })
 export class AppModule { }
